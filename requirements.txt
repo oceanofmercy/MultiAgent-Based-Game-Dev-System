@@ -1,0 +1,7 @@
+anthropic==0.29.0
+pygame==2.5.2
+termcolor==2.4.0
+IPython
+chromadb
+markdownify
+pypdf

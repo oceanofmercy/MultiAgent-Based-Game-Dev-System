@@ -1,0 +1,76 @@
+<game_plan>
+  <overview>Space Shooter is a game where the player controls a ship at the bottom of the screen and shoots bullets at dynamically appearing boxes at the top of the screen. The player moves the ship left and right using arrow keys and shoots bullets by pressing the spacebar. When a bullet hits a box, the box disappears, and the player's score increases.</overview>
+  <mechanics>
+    - Player ship movement (left and right)
+    - Shooting bullets
+    - Dynamically spawning boxes
+    - Collision detection between bullets and boxes
+    - Score tracking and display
+    - Game loop and state management
+  </mechanics>
+  <files>
+    <file>
+      <name>main.py</name>
+      <description>Entry point of the game. Initializes Pygame, sets up the game window, and starts the main game loop by instantiating the GameManager class.</description>
+      <imports>pygame, initialization, game_manager</imports>
+    </file>
+    <file>
+      <name>initialization.py</name>
+      <description>Handles the initialization and setup of Pygame, the game window, and other global resources.</description>
+      <imports>pygame, settings, config</imports>
+    </file>
+    <file>
+      <name>game_manager.py</name>
+      <description>Manages the overall game logic and state. Contains the GameManager class with methods for handling the game loop, updating game objects, checking collisions, managing game states, and drawing objects on the screen.</description>
+      <imports>pygame, shooter, bullet, box, collision, scoring, input_handler, audio, level_manager</imports>
+    </file>
+    <file>
+      <name>shooter.py</name>
+      <description>Defines the Shooter class, representing the player's ship. Contains methods for moving the shooter, shooting bullets, and drawing the shooter on the screen.</description>
+      <imports>pygame, bullet, settings</imports>
+    </file>
+    <file>
+      <name>bullet.py</name>
+      <description>Defines the Bullet class, representing the bullets fired by the player's ship. Contains methods for updating the bullet's position and drawing the bullet on the screen.</description>
+      <imports>pygame, settings</imports>
+    </file>
+    <file>
+      <name>box.py</name>
+      <description>Defines the Box class, representing the boxes that appear dynamically at the top of the game box. Contains methods for updating the box's position, drawing the box on the screen, and handling collisions with bullets.</description>
+      <imports>pygame, settings</imports>
+    </file>
+    <file>
+      <name>collision.py</name>
+      <description>Handles collision detection between game objects. Defines functions to check for collisions between bullets and boxes, and any other game objects.</description>
+      <imports>pygame</imports>
+    </file>
+    <file>
+      <name>scoring.py</name>
+      <description>Manages score calculation and high score handling. Defines functions to update the score, check for high scores, and display the score on the screen.</description>
+      <imports>pygame, settings</imports>
+    </file>
+    <file>
+      <name>input_handler.py</name>
+      <description>Handles user input events. Defines functions to handle keydown and keyup events for moving the shooter and shooting bullets.</description>
+      <imports>pygame</imports>
+    </file>
+    <file>
+      <name>audio.py</name>
+      <description>Manages loading and playing sound assets. Defines functions to load and play sound effects and background music.</description>
+      <imports>pygame, settings</imports>
+    </file>
+    <file>
+      <name>level_manager.py</name>
+      <description>Handles level loading, progression, and transitions (if implementing multiple levels). Defines functions to load level data, spawn boxes based on level configurations, and manage level transitions.</description>
+      <imports>pygame, box, settings</imports>
+    </file>
+    <file>
+      <name>settings.py</name>
+      <description>Stores game-specific settings and configurations. Defines constants and variables for configurable options (e.g., screen dimensions, player lives, game speed).</description>
+    </file>
+    <file>
+      <name>config.py</name>
+      <description>Stores project-wide configurations and constants. Defines constants for paths, directories, and other global configurations.</description>
+    </file>
+  </files>
+</game_plan>
