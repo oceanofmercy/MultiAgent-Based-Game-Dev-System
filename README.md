@@ -1,6 +1,6 @@
 # MultiAgent-Based Game Development System
 
-A system that generates Python code for a Pygame project based on user input, utilizing multiple agents for different operations. Each agent is responsible for a specific task, enabling efficient parallel processing and error handling.
+A MultiAgent AI system that generates Python code for a Pygame project based on user input, utilizing multiple agents for different operations. Each agent is responsible for a specific task, enabling efficient parallel processing and error handling.
 
 ## Features
 
